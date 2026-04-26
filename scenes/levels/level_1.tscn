@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://8wmmvxa6fy0c"]
+
+[ext_resource type="PackedScene" uid="uid://sps2ugxodl38" path="res://scenes/levels/base_level.tscn" id="1_ksju7"]
+[ext_resource type="PackedScene" uid="uid://b82lmeg6najmf" path="res://scenes/slime.tscn" id="2_6iamk"]
+
+[node name="Level_1" unique_id=188222387 instance=ExtResource("1_ksju7")]
+
+[node name="Slime" parent="Enemies" parent_id_path=PackedInt32Array(1341723685) index="0" unique_id=520429026]
+position = Vector2(1120, 649)
+
+[node name="Slime2" parent="Enemies" parent_id_path=PackedInt32Array(1341723685) index="1" unique_id=869847893 instance=ExtResource("2_6iamk")]
+position = Vector2(729, 1315)
+
+[node name="Slime3" parent="Enemies" parent_id_path=PackedInt32Array(1341723685) index="2" unique_id=2079641350 instance=ExtResource("2_6iamk")]
+position = Vector2(1880, 625)

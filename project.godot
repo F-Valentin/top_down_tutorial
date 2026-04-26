@@ -15,6 +15,10 @@ run/main_scene="uid://xh3vnc8mv6ip"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+PlayerStats="*uid://bw3mjr324wbgw"
+
 [input]
 
 left={

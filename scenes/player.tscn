@@ -277,7 +277,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qfm1y")
 }],
-"loop": true,
+"loop": false,
 "name": &"dying",
 "speed": 5.0
 }, {
@@ -435,9 +435,7 @@ script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1621526146]
 sprite_frames = SubResource("SpriteFrames_ha2mi")
-animation = &"attack_right"
-frame = 3
-frame_progress = 1.0
+animation = &"dying"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=343216818]
 position = Vector2(0, 3.5)
@@ -460,6 +458,10 @@ limit_left = 0
 limit_top = 0
 limit_right = 2304
 limit_bottom = 1664
+
+[node name="InulverableCooldown" type="Timer" parent="." unique_id=1015780115]
+wait_time = 0.5
+one_shot = true
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
